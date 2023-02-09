@@ -9,4 +9,4 @@ def factorial(n):
 if __name__ == '__main__':
     num = int(sys.argv[1])
     result = factorial(num)
-    print(f"The factorial of {num} is {result}")
+    print(f"The factorial of {num} is {result} woohoooooooo")
