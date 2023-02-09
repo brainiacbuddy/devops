@@ -1,4 +1,12 @@
-name = "Brainiac"
-print("*" * (len(name) + 4))
-print("* " + name + " *")
-print("*" * (len(name) + 4))
+import sys
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+if __name__ == '__main__':
+    num = int(sys.argv[1])
+    result = factorial(num)
+    print(f"The factorial of {num} is {result}")
