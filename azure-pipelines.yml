@@ -15,7 +15,9 @@ steps:
     scriptSource: 'filePath'
     scriptPath: 'master/devops/hello.py'
     arguments: '5'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/master/devops/'
   displayName: 'Run a one-line script'
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
