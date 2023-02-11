@@ -9,7 +9,6 @@ steps:
 - task: PythonScript@0
   inputs:
     scriptSource: 'filePath'
-    scriptPath: 'master/devops/hello.py'
+    scriptPath: 'https://github.com/brainiacbuddy/devops/blob/master/hello.py'
     arguments: '5'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/master/devops/'
   displayName: 'Run a one-line script'
